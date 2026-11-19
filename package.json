@@ -1,0 +1,64 @@
+{
+  "name": "@digiwebscape/beacon",
+  "version": "0.16.14",
+  "description": "Ultra-lightweight, typed cookieless edge telemetry client, React component, and reverse-proxy recipes for DigiWebscape Private Insights Telemetry™",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react.js",
+      "types": "./dist/react.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo '@digiwebscape/beacon lint ok'",
+    "prepublishOnly": "pnpm build"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "telemetry",
+    "analytics",
+    "cookieless",
+    "gdpr-compliant",
+    "privacy-first",
+    "edge-analytics",
+    "ephemeral-beacon",
+    "react",
+    "nextjs",
+    "digiwebscape"
+  ],
+  "author": "Hitender Sharma (DigiWebscape)",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DigiWebscape/insights-beacon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DigiWebscape/insights-beacon/issues"
+  },
+  "homepage": "https://github.com/DigiWebscape/insights-beacon#readme"
+}
