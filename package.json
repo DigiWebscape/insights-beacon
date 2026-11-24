@@ -1,6 +1,6 @@
 {
   "name": "@digiwebscape/beacon",
-  "version": "0.16.14",
+  "version": "0.16.15",
   "description": "Ultra-lightweight, typed cookieless edge telemetry client, React component, and reverse-proxy recipes for DigiWebscape Private Insights Telemetry™",
   "type": "module",
   "main": "./dist/index.js",
